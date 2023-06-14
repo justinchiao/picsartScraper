@@ -165,6 +165,11 @@ def wordCloud(dict):
         collocations=False,
         stopwords=STOPWORDS,
         ).generate(text)
+    
+    # Display the generated Word Cloud
+    plt.imshow(word_cloud)
+    plt.axis("off")
+    plt.show()
 
 def main():
     print('Update Blog posts?\n')
